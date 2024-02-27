@@ -10,6 +10,7 @@
 </template>
 
 <script>
+import { mapActions } from "vuex";
 import RoomSelect from "./components/RoomSelect.vue";
 import NavigationButtons from "./components/NavigationButtons.vue";
 import BookingTable from "./components/BookingTable.vue";
@@ -22,8 +23,11 @@ export default {
     BookingTable,
     BookingDialog,
   },
+  methods: {
+    ...mapActions(["fetchBookings"]),
+  },
   created() {
-    this.$store.dispatch("fetchBookings");
+    this.fetchBookings();
   },
 };
 </script>

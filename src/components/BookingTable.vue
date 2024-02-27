@@ -67,7 +67,6 @@ export default {
     },
     isToday(date) {
       const today = new Date();
-      console.log(date);
       return (
         date.getDate() === today.getDate() &&
         date.getMonth() === today.getMonth() &&
