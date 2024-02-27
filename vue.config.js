@@ -4,5 +4,6 @@ module.exports = defineConfig({
 });
 
 module.exports = {
-  publicPath: process.env.NODE_ENV === "production" ? "/hotel-booking-calendar/" : "/",
+  publicPath:
+    process.env.NODE_ENV === "production" ? "/hotel-booking-calendar/" : "/",
 };

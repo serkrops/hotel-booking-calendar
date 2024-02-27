@@ -1,7 +1,7 @@
 <template>
   <div v-if="selectedRoom" class="navigation">
-    <v-btn color="primary" @click="prevWeek">🢀</v-btn>
-    <v-btn color="primary" @click="nextWeek">🢂</v-btn>
+    <v-btn color="primary" @click="prevWeek">&#8592;</v-btn>
+    <v-btn color="primary" @click="nextWeek">&#8594;</v-btn>
     <v-btn color="primary" @click="setCurrentDay"><h3>Today</h3></v-btn>
   </div>
 </template>
